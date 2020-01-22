@@ -1,0 +1,76 @@
+.slide {
+    height: 100vh;
+    width: 100%;
+}
+
+@mixin slide-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.img-1 {
+    background: url("../images/food1.jpeg");
+    @include slide-bg;
+}
+
+.slide.img-2 {
+    background: url("../images/food2.jpeg");
+    @include slide-bg;
+}
+
+.slide.img-3 {
+    background: url("../images/food3.jpeg");
+    @include slide-bg;
+}
+
+.img-text {
+    width: 250px;
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+/* Slide Text */
+.img-1 > .img-text::before {
+    content: "Coq au vin";
+    z-index: 1;
+}
+
+.img-2 > .img-text::before {
+    content: "Chicken Basquaise";
+    z-index: 1;
+}
+
+.img-3 > .img-text::before {
+    content: "Bœuf bourguignon";
+    z-index: 1;
+}
+
+.dots-cont {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin: 0px 10px;
+    background-color: #bbb;
+    border-radius: 20%;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+
+.dot-active {
+    background-color: #717171;
+}

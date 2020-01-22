@@ -1,0 +1,18 @@
+@import 'section-rest-menu';
+
+.section-rest-drinks {
+    height: 100%;
+    width: 100%;
+    background: url("../images/rest-drinks.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.white {
+    color: #fff;
+}

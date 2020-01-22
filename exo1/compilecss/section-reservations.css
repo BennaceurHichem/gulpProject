@@ -1,0 +1,18 @@
+/* Variables */
+.section-reservations {
+  padding: 50px; }
+
+.reserve-title {
+  text-transform: uppercase;
+  font-size: 50px; }
+
+.centered {
+  text-align: center; }
+
+.reserve-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3E3E3E;
+  color: #fff; }
+  .reserve-btn:hover {
+    color: #fff; }
